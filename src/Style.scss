@@ -2,21 +2,25 @@
     margin: 0;
     padding: 0;
 }
-@mixin mobile{
+
+@mixin mobile {
     @media screen and (max-width:480px) {
         @content
     }
 }
-@mixin tablet{
+
+@mixin tablet {
     @media screen and (max-width:768px) {
         @content
     }
 }
-@mixin laptop{
+
+@mixin laptop {
     @media screen and (max-width:1200px) {
         @content
     }
 }
+
 .formContainer {
     background-color: #a7bcff;
     height: 100vh;
@@ -106,7 +110,8 @@
         height: 80%;
         display: flex;
         overflow: hidden;
-        @include tablet{
+
+        @include tablet {
             width: 90%;
         }
     }
@@ -128,7 +133,8 @@
 
             .logo {
                 font-weight: bold;
-                @include tablet{
+
+                @include tablet {
                     display: none;
                 }
             }
@@ -153,7 +159,8 @@
                     border: none;
                     cursor: pointer;
                     padding: 5px;
-                    @include tablet{
+
+                    @include tablet {
                         position: absolute;
                         bottom: 10px;
                     }
@@ -286,6 +293,7 @@
 
                 &.owner {
                     flex-direction: row-reverse;
+
                     .messageContent {
                         align-items: flex-end;
 
