@@ -30,6 +30,7 @@ const Input = () => {
       uploadTask.on(
         (error) => {
           //TODO:Handle Error
+          console.error(error)
         },
         () => {
           getDownloadURL(uploadTask.snapshot.ref).then(async (downloadURL) => {
